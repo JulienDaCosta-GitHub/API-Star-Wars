@@ -1,9 +1,9 @@
 // Luke Skywalker
 
+// luke-vehicle
+
 let button_luke_starship = document.querySelector('#button-luke-starship')
 let result_luke_starship = document.querySelector('#result-luke-starship')
-
-// luke-vehicle
 
 function getInfoStarshipLuke() {
     axios.get('https://swapi.co/api/starships/12').then(function (response) {
@@ -55,10 +55,10 @@ button_luke_planet.addEventListener('click', getInfoPlanetLuke)
 
 // Obi-Wan Kenobi
 
+// obiwan-vehicle
+
 let button_obiwan_starship = document.querySelector('#button-obiwan-starship')
 let result_obiwan_starship = document.querySelector('#result-obiwan-starship')
-
-// obiwan-vehicle
 
 function getInfoStarshipObiWan() {
     axios.get('https://swapi.co/api/starships/48').then(function (response) {

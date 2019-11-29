@@ -1,0 +1,19 @@
+body {
+    background-color: black
+}
+
+h1,
+h2,
+button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center !important;
+    color: yellow;
+    background-color: black;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
