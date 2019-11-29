@@ -2,18 +2,26 @@
 
 // luke-vehicle
 
+// On vise les ID du HTML
+
 let button_luke_starship = document.querySelector('#button-luke-starship')
 let result_luke_starship = document.querySelector('#result-luke-starship')
 
+// On fait une fonction qui va récupérer les infos de l'API
+
 function getInfoStarshipLuke() {
     axios.get('https://swapi.co/api/starships/12').then(function (response) {
-        updateInfoStarshipLuke(response.data)
+        updateInfoStarshipLuke(response.data) // Fonction pour appeler les attributs
     })
 }
+
+// On fait la fonction qui va chercher les attributs que l'on souhaite intégrer
 
 function updateInfoStarshipLuke(data) {
     result_luke_starship.innerText = data.name
 }
+
+// On établit l'évènement sur le bouton qui va lancer les fonctions (le click)
 
 button_luke_starship.addEventListener('click', getInfoStarshipLuke)
 
