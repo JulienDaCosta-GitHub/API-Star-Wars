@@ -40,7 +40,7 @@ let button_luke_planet = document.querySelector('#button-luke-planet')
 let result_luke_planet = document.querySelector('#result-luke-planet')
 
 function getInfoPlanetLuke() {
-    axios.get('https://swapi.co/api/planets/9').then(function (response) {
+    axios.get('https://swapi.co/api/planets/1').then(function (response) {
         updateInfoPlanetLuke(response.data)
     })
 }
